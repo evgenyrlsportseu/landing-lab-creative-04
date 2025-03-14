@@ -28,8 +28,12 @@ const Navbar: React.FC = () => {
       )}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#" className="text-xl font-medium tracking-tight transition-opacity hover:opacity-80">
-          LSports Marketing
+        <a href="#" className="transition-opacity hover:opacity-80">
+          <img 
+            src="https://www.lsports.eu/wp-content/themes/LSport/img/logo.svg" 
+            alt="LSports Logo" 
+            className="h-10"
+          />
         </a>
 
         {/* Mobile menu button */}
