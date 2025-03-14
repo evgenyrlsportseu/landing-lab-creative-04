@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
           <img 
             src="https://www.lsports.eu/wp-content/themes/LSport/img/logo.svg" 
             alt="LSports Logo" 
-            className="h-10"
+            className="h-8.5"
           />
         </a>
 
