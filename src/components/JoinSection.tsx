@@ -28,7 +28,7 @@ const JoinSection: React.FC = () => {
             </p>
             
             <a 
-              href="#contact" 
+              href="https://www.lsports.eu/careers/" 
               className="inline-flex items-center gap-2 font-medium text-white bg-transparent border border-white/30 rounded-full px-8 py-3 hover:bg-white/10 transition-colors"
             >
               Contact Us <AnimatedArrow className="text-white" />
