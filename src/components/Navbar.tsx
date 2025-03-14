@@ -39,21 +39,21 @@ const Navbar: React.FC = () => {
         {/* Mobile menu button */}
         <button 
           onClick={toggleMobileMenu} 
-          className="p-2 rounded-full md:hidden transition-colors hover:bg-black/5"
+          className="p-2 rounded-full md:hidden transition-colors hover:bg-cyan-100"
           aria-label="Toggle menu"
         >
-          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {mobileMenuOpen ? <X size={24} className="text-cyan-600" /> : <Menu size={24} className="text-cyan-600" />}
         </button>
 
         {/* Desktop menu */}
         <nav className="hidden md:flex items-center space-x-10">
-          <a href="#team" className="text-sm font-medium text-neutral-800 hover:text-black transition-colors">
+          <a href="#team" className="text-sm font-medium text-purple-700 hover:text-purple-900 transition-colors">
             Team
           </a>
-          <a href="#join" className="text-sm font-medium text-neutral-800 hover:text-black transition-colors">
+          <a href="#join" className="text-sm font-medium text-purple-700 hover:text-purple-900 transition-colors">
             Join Us
           </a>
-          <a href="https://www.lsports.eu/careers/" className="text-sm font-medium border border-black px-5 py-2 rounded-full transition-colors hover:bg-black hover:text-white">
+          <a href="https://www.lsports.eu/careers/" className="text-sm font-medium bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-5 py-2 rounded-full transition-all hover:shadow-lg hover:shadow-cyan-200 hover:-translate-y-0.5">
             Contact
           </a>
         </nav>
@@ -61,28 +61,28 @@ const Navbar: React.FC = () => {
         {/* Mobile menu */}
         <div 
           className={cn(
-            "fixed inset-0 bg-white z-40 pt-24 px-6 flex flex-col md:hidden transition-all duration-300 ease-in-out",
+            "fixed inset-0 bg-gradient-to-br from-purple-50 to-cyan-50 z-40 pt-24 px-6 flex flex-col md:hidden transition-all duration-300 ease-in-out",
             mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
           )}
         >
           <nav className="flex flex-col space-y-6">
             <a 
               href="#team" 
-              className="text-2xl font-medium py-2"
+              className="text-2xl font-medium py-2 text-purple-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               Team
             </a>
             <a 
               href="#join" 
-              className="text-2xl font-medium py-2"
+              className="text-2xl font-medium py-2 text-purple-700"
               onClick={() => setMobileMenuOpen(false)}
             >
               Join Us
             </a>
             <a 
               href="https://www.lsports.eu/careers/" 
-              className="text-2xl font-medium py-2 mt-4 border border-black px-5 rounded-full text-center"
+              className="text-2xl font-medium py-3 mt-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 rounded-full text-center shadow-lg shadow-cyan-200/50"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact
