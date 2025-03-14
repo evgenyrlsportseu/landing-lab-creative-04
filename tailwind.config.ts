@@ -62,15 +62,6 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// Bright color scheme additions
-				bright: {
-					purple: '#8B5CF6',
-					pink: '#EC4899',
-					cyan: '#06B6D4',
-					yellow: '#FBBF24',
-					orange: '#F97316',
-					blue: '#3B82F6',
 				}
 			},
 			fontFamily: {
@@ -110,10 +101,6 @@ export default {
 				'float': {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' }
-				},
-				'pulse-bright': {
-					'0%, 100%': { opacity: '1' },
-					'50%': { opacity: '0.8' }
 				}
 			},
 			animation: {
@@ -123,16 +110,7 @@ export default {
 				'fade-out': 'fade-out 0.5s ease-out',
 				'scale-in': 'scale-in 0.5s ease-out',
 				'slide-right': 'slide-right 0.5s ease-out',
-				'float': 'float 4s ease-in-out infinite',
-				'pulse-bright': 'pulse-bright 2s ease-in-out infinite'
-			},
-			backgroundImage: {
-				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-				'gradient-candy': 'linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)',
-				'gradient-ocean': 'linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)',
-				'gradient-sunset': 'linear-gradient(to right, #FF5F6D 0%, #FFC371 100%)',
-				'gradient-purple': 'linear-gradient(90deg, #8B5CF6 0%, #EC4899 100%)',
-				'gradient-blue': 'linear-gradient(to right, #3B82F6 0%, #06B6D4 100%)'
+				'float': 'float 4s ease-in-out infinite'
 			}
 		}
 	},

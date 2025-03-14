@@ -1,4 +1,3 @@
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -13,10 +12,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #FF5F6D);
+  filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #00C9FF);
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
@@ -36,46 +35,8 @@
 
 .card {
   padding: 2em;
-  background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
-  border-radius: 1rem;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
 }
 
 .read-the-docs {
-  color: #F97316;
-}
-
-/* Bright color scheme classes */
-.bg-gradient-candy {
-  background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);
-}
-
-.bg-gradient-ocean {
-  background-image: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-}
-
-.bg-gradient-sunset {
-  background-image: linear-gradient(to right, #FF5F6D 0%, #FFC371 100%);
-}
-
-.bg-gradient-purple {
-  background-image: linear-gradient(90deg, #8B5CF6 0%, #EC4899 100%);
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
-}
-
-.neon-shadow {
-  box-shadow: 0 0 15px rgba(246, 211, 101, 0.7);
-}
-
-.neon-text {
-  text-shadow: 0 0 5px rgba(249, 115, 22, 0.7);
+  color: #888;
 }
