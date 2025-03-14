@@ -64,24 +64,6 @@ const HeroSection: React.FC = () => {
           >
             Discover Excellence <AnimatedArrow />
           </a>
-          
-          <div 
-            className="mt-20 w-full max-w-4xl mx-auto relative animate-fade-in" 
-            style={{ animationDelay: '600ms' }}
-          >
-            <div className="aspect-[16/9] bg-gradient-to-tr from-neutral-100 to-white rounded-2xl overflow-hidden subtle-shadow">
-              <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')] bg-cover bg-center opacity-90"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-white/70 via-transparent"></div>
-            </div>
-            
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-md px-8 md:px-0">
-              <div className="glass-card rounded-xl p-6 text-center subtle-shadow">
-                <p className="text-sm md:text-base text-neutral-700">
-                  Elevating brands through strategic marketing solutions that drive measurable results
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       
