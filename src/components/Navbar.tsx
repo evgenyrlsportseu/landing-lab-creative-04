@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
           <a href="#join" className="text-sm font-medium text-neutral-800 hover:text-black transition-colors">
             Join Us
           </a>
-          <a href="#contact" className="text-sm font-medium border border-black px-5 py-2 rounded-full transition-colors hover:bg-black hover:text-white">
+          <a href="https://www.lsports.eu/careers/" className="text-sm font-medium border border-black px-5 py-2 rounded-full transition-colors hover:bg-black hover:text-white">
             Contact
           </a>
         </nav>
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
               Join Us
             </a>
             <a 
-              href="#contact" 
+              href="https://www.lsports.eu/careers/" 
               className="text-2xl font-medium py-2 mt-4 border border-black px-5 rounded-full text-center"
               onClick={() => setMobileMenuOpen(false)}
             >
