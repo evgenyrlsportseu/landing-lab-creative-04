@@ -13,10 +13,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #8B5CF6);
+  filter: drop-shadow(0 0 2em #FF5F6D);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #06B6D4);
+  filter: drop-shadow(0 0 2em #00C9FF);
 }
 
 @keyframes logo-spin {
@@ -44,7 +44,7 @@
 }
 
 .read-the-docs {
-  color: #EC4899;
+  color: #F97316;
 }
 
 /* Bright color scheme classes */
@@ -73,9 +73,9 @@
 }
 
 .neon-shadow {
-  box-shadow: 0 0 15px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 15px rgba(246, 211, 101, 0.7);
 }
 
 .neon-text {
-  text-shadow: 0 0 5px rgba(139, 92, 246, 0.7);
+  text-shadow: 0 0 5px rgba(249, 115, 22, 0.7);
 }

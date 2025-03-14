@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
   
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 pt-24 pb-16">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-neutral-50 to-white z-[-1]"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-yellow-50 via-orange-50 to-yellow-50 z-[-1]"></div>
       
       <div 
         ref={heroRef}
@@ -47,17 +47,17 @@ const HeroSection: React.FC = () => {
         style={{ transformStyle: 'preserve-3d' }}
       >
         <div className="flex flex-col items-center text-center">
-          <h1 className="hero-text-gradient text-balance animate-fade-in">
+          <h1 className="bg-gradient-to-r from-orange-600 to-yellow-600 bg-clip-text text-transparent text-balance animate-fade-in">
             LSports Marketing
           </h1>
           
-          <div className="w-16 h-0.5 bg-black/20 my-8 animate-fade-in" style={{ animationDelay: '200ms' }}></div>
+          <div className="w-16 h-0.5 bg-gradient-sunset my-8 animate-fade-in" style={{ animationDelay: '200ms' }}></div>
           
           <a 
             href="#team" 
             className={cn(
-              "group inline-flex items-center gap-2 text-xl font-medium",
-              "hover:opacity-70 transition-opacity duration-300",
+              "group inline-flex items-center gap-2 text-xl font-medium text-orange-600",
+              "hover:text-orange-700 transition-colors duration-300",
               "animate-fade-in"
             )}
             style={{ animationDelay: '400ms' }}
@@ -68,10 +68,10 @@ const HeroSection: React.FC = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
-        <div className="w-5 h-10 border-2 border-black/30 rounded-full flex justify-center">
-          <div className="w-1 h-2 bg-black/40 rounded-full mt-2 animate-fade-in animate-float"></div>
+        <div className="w-5 h-10 border-2 border-orange-400 rounded-full flex justify-center">
+          <div className="w-1 h-2 bg-orange-500 rounded-full mt-2 animate-fade-in animate-float"></div>
         </div>
-        <span className="text-xs text-black/40 mt-2">Scroll</span>
+        <span className="text-xs text-orange-500 mt-2">Scroll</span>
       </div>
     </section>
   );

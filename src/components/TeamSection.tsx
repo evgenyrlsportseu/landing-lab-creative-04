@@ -80,11 +80,11 @@ const TeamSection: React.FC = () => {
   });
 
   return (
-    <section id="team" className="py-24 px-6 bg-white">
+    <section id="team" className="py-24 px-6 bg-gradient-to-b from-yellow-50 to-orange-50">
       <div className="max-w-7xl mx-auto">
         <div ref={headingRef} className="text-center mb-16">
           <div className={cn(
-            "inline-block px-4 py-1 bg-neutral-900 text-white text-xs tracking-widest rounded-full mb-4",
+            "inline-block px-4 py-1 bg-gradient-candy text-white text-xs tracking-widest rounded-full mb-4",
             "transform transition-all duration-700",
             headingInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           )}>
@@ -92,7 +92,7 @@ const TeamSection: React.FC = () => {
           </div>
           
           <h2 className={cn(
-            "mb-6 text-balance",
+            "mb-6 text-balance text-orange-700",
             "transform transition-all duration-700 delay-100",
             headingInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           )}>
@@ -100,7 +100,7 @@ const TeamSection: React.FC = () => {
           </h2>
           
           <p className={cn(
-            "max-w-2xl mx-auto text-neutral-600 text-lg text-balance",
+            "max-w-2xl mx-auto text-orange-600 text-lg text-balance",
             "transform transition-all duration-700 delay-200",
             headingInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           )}>
@@ -111,15 +111,15 @@ const TeamSection: React.FC = () => {
         <div 
           ref={quoteRef}
           className={cn(
-            "max-w-2xl mx-auto mb-20 px-6 py-10 border-l-4 border-neutral-900 bg-neutral-50",
+            "max-w-2xl mx-auto mb-20 px-6 py-10 border-l-4 border-orange-500 bg-orange-100",
             "transform transition-all duration-700",
             quoteInView ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"
           )}
         >
-          <blockquote className="text-xl md:text-2xl italic text-neutral-700 text-balance">
+          <blockquote className="text-xl md:text-2xl italic text-orange-700 text-balance">
             "Great things in business are never done by one person; they're done by a team of people."
           </blockquote>
-          <div className="mt-4 text-sm font-medium text-neutral-500">
+          <div className="mt-4 text-sm font-medium text-orange-500">
             — Steve Jobs
           </div>
         </div>

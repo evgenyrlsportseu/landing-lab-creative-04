@@ -11,7 +11,7 @@ const JoinSection: React.FC = () => {
   });
 
   return (
-    <section id="join" className="py-24 px-6 bg-purple-50">
+    <section id="join" className="py-24 px-6 bg-orange-50">
       <div 
         ref={ref}
         className={cn(
@@ -20,7 +20,7 @@ const JoinSection: React.FC = () => {
           inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
         )}
       >
-        <div className="bg-gradient-to-tr from-purple-600 to-pink-500 p-12 md:p-24 relative z-10">
+        <div className="bg-gradient-sunset p-12 md:p-24 relative z-10">
           <div className="relative z-10 max-w-2xl mx-auto text-center">
             <h2 className="text-white mb-6">Join Our Team</h2>
             <p className="text-white/90 text-lg mb-10">
@@ -36,9 +36,9 @@ const JoinSection: React.FC = () => {
           </div>
           
           {/* Abstract design elements */}
-          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-cyan-400/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/20 rounded-full blur-3xl"></div>
-          <div className="absolute top-0 right-1/4 w-48 h-48 bg-orange-400/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-orange-400/30 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-yellow-400/30 rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-1/4 w-48 h-48 bg-yellow-400/20 rounded-full blur-3xl"></div>
         </div>
       </div>
     </section>
