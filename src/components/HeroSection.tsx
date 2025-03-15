@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import AnimatedArrow from './AnimatedArrow';
 import { cn } from '@/lib/utils';
-import WavyBackground from './WavyBackground';
 
 const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -39,50 +38,41 @@ const HeroSection: React.FC = () => {
   }, []);
   
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
-      <WavyBackground 
-        containerClassName="min-h-screen relative w-full overflow-hidden"
-        className="max-w-7xl w-full px-6 pt-24 pb-16"
-        colors={["#38bdf8", "#818cf8", "#c084fc", "#e879f9", "#22d3ee"]}
-        waveWidth={50}
-        backgroundFill="#111122"
-        blur={10}
-        speed="fast"
-        waveOpacity={0.2}
+    <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 pt-24 pb-16">
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-neutral-50 to-white z-[-1]"></div>
+      
+      <div 
+        ref={heroRef}
+        className="max-w-7xl w-full mx-auto transition-transform duration-300 ease-out"
+        style={{ transformStyle: 'preserve-3d' }}
       >
-        <div 
-          ref={heroRef}
-          className="max-w-7xl w-full mx-auto transition-transform duration-300 ease-out"
-          style={{ transformStyle: 'preserve-3d' }}
-        >
-          <div className="flex flex-col items-center text-center">
-            <h1 className="text-white text-balance animate-fade-in">
-              LSports Marketing
-            </h1>
-            
-            <div className="w-16 h-0.5 bg-white/20 my-8 animate-fade-in" style={{ animationDelay: '200ms' }}></div>
-            
-            <a 
-              href="#team" 
-              className={cn(
-                "group inline-flex items-center gap-2 text-xl font-medium text-white",
-                "hover:opacity-70 transition-opacity duration-300",
-                "animate-fade-in"
-              )}
-              style={{ animationDelay: '400ms' }}
-            >
-              Discover Excellence <AnimatedArrow />
-            </a>
-          </div>
+        <div className="flex flex-col items-center text-center">
+          <h1 className="hero-text-gradient text-balance animate-fade-in">
+            LSports Marketing
+          </h1>
+          
+          <div className="w-16 h-0.5 bg-black/20 my-8 animate-fade-in" style={{ animationDelay: '200ms' }}></div>
+          
+          <a 
+            href="#team" 
+            className={cn(
+              "group inline-flex items-center gap-2 text-xl font-medium",
+              "hover:opacity-70 transition-opacity duration-300",
+              "animate-fade-in"
+            )}
+            style={{ animationDelay: '400ms' }}
+          >
+            Discover Excellence <AnimatedArrow />
+          </a>
         </div>
-        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
-          <div className="w-5 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-2 bg-white/40 rounded-full mt-2 animate-fade-in animate-float"></div>
-          </div>
-          <span className="text-xs text-white/40 mt-2">Scroll</span>
+      </div>
+      
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-float">
+        <div className="w-5 h-10 border-2 border-black/30 rounded-full flex justify-center">
+          <div className="w-1 h-2 bg-black/40 rounded-full mt-2 animate-fade-in animate-float"></div>
         </div>
-      </WavyBackground>
+        <span className="text-xs text-black/40 mt-2">Scroll</span>
+      </div>
     </section>
   );
 };
