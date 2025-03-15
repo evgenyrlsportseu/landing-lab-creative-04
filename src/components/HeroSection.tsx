@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import AnimatedArrow from './AnimatedArrow';
 import { cn } from '@/lib/utils';
+import WavyBackground from './WavyBackground';
 
 const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -64,6 +65,19 @@ const HeroSection: React.FC = () => {
           >
             Discover Excellence <AnimatedArrow />
           </a>
+          
+          <div className="w-full mt-8">
+            <WavyBackground 
+              height={200}
+              colors={["#9b87f5", "#7E69AB", "#6E59A5", "#D946EF", "#0EA5E9"]}
+              waveWidth={40}
+              blur={7}
+              speed="slow"
+              waveOpacity={0.6}
+              backgroundFill="rgba(255, 255, 255, 0)"
+              className="rounded-lg"
+            />
+          </div>
         </div>
       </div>
       
