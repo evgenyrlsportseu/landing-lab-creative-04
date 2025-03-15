@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import AnimatedArrow from './AnimatedArrow';
 import { cn } from '@/lib/utils';
+import WaveBackground from './WaveBackground';
 
 const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -39,7 +40,16 @@ const HeroSection: React.FC = () => {
   
   return (
     <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-6 pt-24 pb-16">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-neutral-50 to-white z-[-1]"></div>
+      {/* Wave Background instead of gradient */}
+      <WaveBackground 
+        colors={['#9b87f5', '#D946EF', '#0EA5E9']}
+        waveWidth={0.008}
+        speed={0.002}
+        blurIntensity={30}
+        backgroundColor="rgba(255, 255, 255, 0.1)"
+        backgroundOpacity={0.8}
+        waveOpacity={0.6}
+      />
       
       <div 
         ref={heroRef}
