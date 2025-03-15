@@ -122,7 +122,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className={`absolute inset-0 z-0 transition-opacity duration-500 ease-in-out ${
+        className={`absolute inset-0 z-0 transition-opacity duration-1000 ease-in-out ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
         ref={canvasRef}
