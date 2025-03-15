@@ -36,6 +36,8 @@ export const WavyBackground = ({
     ctx: any,
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [isVisible, setIsVisible] = useState(false);
+
   const getSpeed = () => {
     switch (speed) {
       case "slow":
@@ -90,11 +92,18 @@ export const WavyBackground = ({
     animationId = requestAnimationFrame(render);
   };
   useEffect(() => {
+    // Add a delay before showing the canvas
+    const timeout = setTimeout(() => {
+      setIsVisible(true);
+    }, 500);
+
     init();
     return () => {
+      clearTimeout(timeout);
       cancelAnimationFrame(animationId);
     };
   }, []);
+
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
     // Safari compatibility support
@@ -104,6 +113,7 @@ export const WavyBackground = ({
         !navigator.userAgent.includes("Chrome")
     );
   }, []);
+
   return (
     <div
       className={cn(
@@ -112,7 +122,9 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute inset-0 z-0"
+        className={`absolute inset-0 z-0 transition-opacity duration-500 ease-in-out ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
         ref={canvasRef}
         id="canvas"
         style={{
