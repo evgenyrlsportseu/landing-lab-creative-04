@@ -2,7 +2,6 @@
 import React, { useEffect, useRef } from 'react';
 import AnimatedArrow from './AnimatedArrow';
 import { cn } from '@/lib/utils';
-import WavyBackground from './WavyBackground';
 
 const HeroSection: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -52,16 +51,7 @@ const HeroSection: React.FC = () => {
             LSports Marketing
           </h1>
           
-          {/* Wavy Background positioned below the heading */}
-          <WavyBackground 
-            height={200} 
-            waveWidth={30}
-            blur={8}
-            speed="slow"
-            waveOpacity={0.6}
-            className="my-8"
-            backgroundFill="rgba(255, 255, 255, 0)"
-          />
+          <div className="w-16 h-0.5 bg-black/20 my-8 animate-fade-in" style={{ animationDelay: '200ms' }}></div>
           
           <a 
             href="#team" 
